@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "handoffdrop"
+version = "0.1.0"
+description = "Find user constraints that get lost, weakened, or broken when AI agents delegate to sub-agents."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [{name = "Md Rashedul Hasan"}]
+
+[project.scripts]
+handoffdrop = "handoffdrop.cli:main"
+
+[tool.setuptools]
+packages = ["handoffdrop"]
